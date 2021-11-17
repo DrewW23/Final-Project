@@ -1,0 +1,26 @@
+body{
+    color:black;
+   display: flex;
+   
+}
+
+.container{
+
+    position: absolute;
+    width: 10%;
+    top: 30%;
+    bottom: 80%;
+    left: 45%;
+}
+
+.container p{
+    background-color: red;
+}
+.user{
+    background-color: red;
+}
+
+.passWord{
+    background-color: red;
+}
+

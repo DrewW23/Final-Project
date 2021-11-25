@@ -174,42 +174,58 @@ main{
     flex-direction: column;
 }
 
+/* section */
 
 section{
     display: flex;
 }
 
 .firstSection{
-    
-    background-color: blueviolet;
+   display: flex;
+   border: blue 1px solid;
+   margin-bottom: ;
 }
-.firstSection img{
+.firstSection aside{
     padding: 10px;
     margin: 20px;
     float: right;
 }
 
 .firstLeft{
-    margin: 10px 10px;
+    width: 40%;
+    margin-top:70px;
+    margin-bottom: 130px ;
     padding: 10px 10px;
+    text-align: left;
+}
+
+
+.firstSection aside{
+     top: auto;
+    position: absolute;
+    left: 1500px;
+    
 }
 
 .secondSection{
-    background-color: brown;
     display: flex;
+    padding: 20px;
+    margin-top: 120px;
+    
 }
 
-.secondSection .secondLfet{
-    float: right;
-    margin-left: 50%;
-    background-color:purple ;
+ .firstBeat{
+    padding: 10px 20px;
+    margin: 20px 200px;
+    
+    display: flex;
+    flex-direction: column;
 }
 
-
-.secondSection aside{
+.secondRight{
+    color: #fff;
+    padding: 20px 20px;
+    margin: 30px 70px;
     width: 40%;
-    padding-left: 5px;
-    margin: 5px;
-    float: right;
-}
 
+}

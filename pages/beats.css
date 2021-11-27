@@ -1,0 +1,31 @@
+*{
+    color: #fff;
+    background-color: black;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.beatsIcon{
+    width: 5%;
+}
+
+header{
+    display:flex ;
+    flex-direction: column;
+}
+
+
+.sample{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexContainer a{
+    color: #fff;
+}
+

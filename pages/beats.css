@@ -1,0 +1,16 @@
+body{
+    color: black;
+    background-color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beatsIcon{
+    width: 5%;
+}
+
+header{
+    display:flex ;
+    flex-direction: column;
+}

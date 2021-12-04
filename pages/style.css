@@ -1,0 +1,418 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*Top too are for small.css*/
+    -webkit-text-size-adjust: border-box;
+    -ms-text-size-adjust: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #474747;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/*-------
+Header
+--------*/
+
+header{
+    background-color: #06668a;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 10;
+    align-items: left;
+    padding:20px 20px ;
+    border-bottom: 3px black solid;
+
+}
+
+
+header img{
+    padding: 0 10px;
+    width: 5%;
+}
+
+.icon{
+    display: flex;
+}
+
+
+
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-ul{
+    width: 50%;
+    display: flex;
+    padding-top: 15px;
+    
+}
+
+.nav-ul li{
+    text-align: center;
+    display: flex;
+    padding: 0px 10px ;
+    margin: 0 15px;
+    width: 55%;
+
+    border: 1px black solid;
+    border-radius: .50rem;
+    background-color: rgb(14, 14, 187);
+}
+
+.nav-ul a{
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    list-style: none;
+    text-decoration:none ;
+}
+
+
+/*-------
+Main Neon Button
+--------*/
+
+
+
+.btns{
+    display: flex;
+    background-color: #474747;
+}
+
+.playImg{
+    margin: 10px 10px ;
+    padding: 10px 10px;
+    width: 25%;
+}
+
+.btns img {
+    text-align: center;
+    width: 15%;
+}
+
+.btns h1{
+    margin: 10px 10px ;
+    padding: 10px 10px;
+    width: 33.3%;
+    text-align: center;
+}
+
+
+
+.neon-button{
+    font-size: 50px;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkblue;
+    border: darkblue 0.125rem solid;
+    padding: 0.25em 1em;
+    border-radius: .25em;
+    margin-top: 70px;
+    margin-bottom:80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    background-color: darkslategray;
+
+    
+
+
+    text-shadow:  
+    0 0 10px darkcyan,
+    0 0 21px darkcyan,
+    0 0 42px darkcyan,
+    0 0 82px rgb(4, 0, 255),
+    0 0 92px rgb(4, 0, 255),
+    0 0 102px rgb(4, 0, 255),
+    0 0 151px rgb(4, 0, 255);
+
+     box-shadow:inset 0 0 0.5em  #0ca3da,
+                0 0 0.5em  #0ca3da;
+    
+    position: relative;
+}
+
+.neon-button::before{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    background:#0ca3da;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 100ms linear;
+
+/*perspective always comes first if using*/
+
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(.5em);
+    opacity: 0.7;
+}
+.neon-button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em #0ca3da;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+
+.neon-button:hover::before,
+.neon-button:focus::before{
+    opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after{
+    opacity: 1;
+}
+
+.neon-button:hover,
+.neon-button:focus{
+    background:darkcyan;
+    color: darkblue;
+    text-shadow: none;
+}
+.neonDiv{
+    display: flex;
+    
+    width: 45%;
+    
+}
+
+.neonDiv a{
+    width: 100%;
+  
+}
+
+.neonDiv p {
+    width: 100%;
+    color: #fff;
+}
+
+ /*main*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------
+First Section
+-------------*/
+
+
+.firstSection{
+    display: flex;
+    padding: 10px 10px;
+    margin-top: 80px;
+    color: #fff;
+    background-color: #06668a ;
+    border: black .5px solid;
+}
+
+.firstSection img{
+    padding: 20px;
+    margin: 30px;
+    margin-left: 300px;
+    right: auto;
+}
+
+.firstLeft{
+
+    padding: 20px 20px;
+    margin: 20px 20px ;
+    max-width: 50%;
+    margin-top:70px;
+    margin-bottom: 130px ;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+/*------------
+Second Section
+-------------*/
+
+.secondSection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-top: 20px;
+    border: black .5px solid;
+    background-color: #06668a;
+}
+.secondSection img{
+    width: 300px;
+    height: 200px;
+    border: solid black 1px;
+}
+ .firstBeat{
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 200px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.secondRight{
+    color: #fff;
+    padding: 20px 20px;
+    margin: 30px 70px;
+    width: 40%;
+
+}
+
+/*------------
+Third Section
+-------------*/
+.thirdSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    color: #fff;
+    background-color: #06668a;
+    border: 1px solid black;
+}
+
+
+.thirdSection p {
+    width: 35%;
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+.thirdSection a{
+    text-decoration: none;
+    color: rgb(156, 46, 247);
+}
+
+.thirdSection a:hover{
+    text-decoration: none;
+    color: cyan;
+}
+
+
+/*----------
+Footer
+-----------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #06668a;
+    
+    padding-top: 10px;
+    margin-top: 5px;
+  
+}
+  h3{
+    font-style: italic;
+    width: 10%;
+}
+
+
+.footerContainer{
+    list-style: none;
+    display: flex;
+    
+    width: 100%;
+    background-color: #333333;
+}
+
+  
+.footerBox{
+    width: 25%;
+    padding: 20px 20px;
+    margin: 10px 10px;
+}
+  
+.footerList li{
+    
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 5px;
+
+    list-style: none;
+    color: #fff;
+}
+  
+.footerContainerBottom{
+    width: 100%;
+    background-color: #1b1b1b;
+}
+  
+.bottomContent{
+    font-style: italic;
+}
+  
+.bottomContent ul{
+    text-align: center;
+}
+  
+.bottomContent li{
+    list-style: none;  
+}
+
+
+.footerList li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*small*/
+@media only screen and (min-width:450px){
+
+}
+
+
+
+/*med*/
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/*Large*/
+@media only screen and (min-width: 1200px) {
+    
+}

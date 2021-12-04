@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="https://fontawesome.com/v5.15/icons/compact-disc?style=solid">
     <link rel="stylesheet" href="beats.css">
+    
   
     <title>Beats</title>
 </head>
@@ -343,11 +344,12 @@
             <p class="card__body">Tell us what you think!</p>
 
             <a  class="card__body" href="/audio/horrible advice.mp3" download="Horrible Advice">Download</a>
-
+            
             <div id="comment" class="card__body">
-                <textarea name="comment" placeholder="Type your comment" class="commentBox"></textarea>
-                <button type="submit">Submit Comment</button>
-            </div>
+              <textarea name="comment" placeholder="Type your comment" class="commentBox"></textarea>
+              <button type="submit">Submit Comment</button>
+          </div>
+
           </div>
           
         </div>
@@ -370,6 +372,8 @@
 
 <footer>
   <div class="footerContainer">
+
+    <h3>Source Sounds</h3>
 
   
   <div class="footerBox">
@@ -413,18 +417,27 @@
 
     
   <div class="footerBox">
-    
+
     <h3>Contact Us</h3>
 
+    <div class="commentSectionContainer">
+    <p>Leave a comment</p>
 
-    <!--<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-    <button type="submit">Submit Comment</button>-->
+    <form>
+        <textarea name="commentSection" id="commentSection" cols="30" rows="10" placeholder='Add Your Comment'></textarea>
 
+        <div class="summitBtns">
+
+          <input type="submit" value='Comment'>
+
+          <button id='clear'>Cancel</button>
+
+        </div>
+    </form>
+
+  </div>
   
   </div>
-
-
-
 
 
 </div>
@@ -432,9 +445,7 @@
 
 <div class="footerContainerBottom">
   <div class="bottomContent">
-    <h3>Source Sounds</h3>
-    
-
+  
     <ul>
       <h4>SourceSoundsLLC</h4>
       <li>&copy;SourceSounds</li>
@@ -446,6 +457,11 @@
 
 
 </footer>
+
+
+
+
+<script src='/scripts/home.js'></script>
     
 </body>
 

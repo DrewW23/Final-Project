@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/pages/style.css">
     <title>Source Sounds</title>
 </head>
 <body>
@@ -21,10 +22,10 @@
 
             <ul class="nav-ul">
 
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/pages/index.html">Home</a></li>
                 <li><a href="/pages/beats.html">Beats</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Social Media</a></li>
+                <li><a href="#company">Contact us</a></li>
+                <li><a href="#quickLinks">Social Media</a></li>
                
             </ul>
 
@@ -46,9 +47,11 @@
             
         </div>
 
-        <!--<h1>bruh</h1>-->
+        
         
     </div>
+
+    <hr>
 
     <div class="firstSection">
 
@@ -63,24 +66,42 @@
             </p>
 
         </div>
-
+    
+        <div class="firstRight">
         <img src="/images/colorfuldisk.jpeg" alt="colorfuldisk">
+      </div>
     </div>
+
+    <hr>
 
     <div class="secondSection">
 
-        <div class="firstBeat">
-            
-            <h2>Source Sounds First Beat</h2>
+      <div class="flexContainer">
 
-            <img src="/images/lightblueShapes.png" alt="">
-            
-            <audio controls>
-                <source src="/audio/big_vibe.mp3">
-            </audio>
-
-        </div>
-
+        <div class="card">
+            <div class="card__content">
+              
+              <div class="card__front">
+                <h3 class="card__title">Big Vibe</h3>
+                <p class="card__subtitle">Source Sounds</p>
+    
+              </div> 
+              
+              <div class="card__back">
+                  <img class="card__body" src="/images/storm.jpeg" alt="">
+                  <p class="card__body">Big Vibe</p>
+    
+                  <audio controls class="card__body">
+                      <source src="/audio/big_vibe.mp3">
+                  </audio>
+                  
+                <p class="card__body"></p>
+          
+              </div>
+              
+            </div>
+          </div>
+      </div>
         
         <div class="secondRight">
             
@@ -99,22 +120,51 @@
     </div>
     
 
-    
+    <hr>
 
     <div class="thirdSection">
+
+      <div class="thirdLeft">
 
        <h2>How to get our beats or music</h2>
             
         <p> Go to the <a href="/pages/beats.html" class="libraryLink">Library</a> or email us at :sourcesoundsllc@gmail.com<br>
             
             Source's music can also be found on all streaming platforms when he does begin releasing EPs and singles (check Social Media links for Spotify, YouTube, etc.)</p>
-        
-       
      
-        <p>Download our samples <a href="/pages/beats.html">Here</a> </p>
+        <p>Download our samples <a href="/pages/beats.html">Here</a></p>
+
+      </div>
+
+
+      <div class="thirdRight">
+        <h2>Packages</h2>
+  
+        <ul>
+          <li class="packages">Rage</li>
+                <ul>
+                  <li>Beats like Miss the Rage by TrippyRed</li>
+                </ul>
+                <br>
+          <li class="packages">Trap</li>
+          <ul>
+            <li>Beats like The Drop by Bro Safari</li>
+            <li>Also Ball So Hard by Hucci & Stööki Sound</li>
+          </ul>
+          <br>
+          <li class="packages">Drum and Bass</li>
+          <ul>
+            <li>Beats like Buss The Red Original Mix</li>
+          </ul>
+        </ul>
+  
+  
+      </div>
+  
 
 
 
+        
     </div>
 
 </main>
@@ -130,11 +180,11 @@
        
             <h3>Source Sounds</h3>
         
-
+    <div class="boxContainer">
     <div class="footerBox">
   
-      <ul class="footerList">
-        <h3>Company</h3>
+      <ul class="footerList" id="companyFooter">
+        <h3 id="company">Company</h3>
         <li>We strive to make the best beats there are to listen to.</li> <br>
         <li>If you have any problems with downloading contnent please contact us by emailing us at sourcesoundsllc@gmail.com</li>
         <li></li>
@@ -143,14 +193,19 @@
     
     </div>
   
-      
     <div class="footerBox">
       
       <ul id="quickLinks" class="footerList">
         <h3>Quick Links</h3>
+
         <li><a href="/index.html">Home</a></li>
         <li><a href="/pages/beats.html">Beats</a></li>
         <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      
+      
       </ul>
   
   
@@ -161,10 +216,9 @@
     <div class="footerBox">
       
       <ul class="footerList">
-        <h3>About Us</h3>
-        <li>Located in </li>
+        <h3 id="AboutUs">About Us</h3>
+        <li>Located in Corbin Kentucky</li>
         <li>Email:sourcesoundsllc@gmail.com</li>
-        <li></li>
       </ul>
   
     
@@ -183,7 +237,7 @@
   
           <div class="summitBtns">
   
-            <input type="submit" value='Comment'>
+            <input type="submit" value="Comment">
   
             <button id='clear'>Cancel</button>
   
@@ -191,10 +245,6 @@
       </form>
   
     </div>
-  
-  
-  
-  
     
     </div>
   
